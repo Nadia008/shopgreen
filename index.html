@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet"></link>
+
+</head>
+<body>
+  <div>
+    <h1 class="cssanimation lightning sequence">Happy Shop</h1>
+  </div>
+  <div class="container">
+    <div class="content">
+      <form>
+        <label for="title">Название товара:</label>
+        <input type="text" id="title" name="title">
+
+        <label for="price">Цена:</label>
+        <input type="number" id="price" name="price">
+
+        <label for="description">Описание:</label>
+        <textarea id="description" name="description"></textarea>
+
+        <label for="category">Категория:</label>
+        <input type="text" id="category" name="category">
+
+        <button id="addBtn" class="addBtn">Добавить товар</button>
+      </form>
+      <div class="text">
+        <h3>Описание работы магазина</h3>
+        <p>Мы получаем данные с сервара через запрос GET</p>
+        <p>При нажатии на крестик на карточке товара - происходит запрос DELETE. API, которым мы пользуемся не дает
+          вносить изменения в базе данных, поэтому мы просто увидим результат в console и в Network </p>
+        <p>При нажатии на кнопку Добавить товар - товар тоже добавлен не будет, но мы сможем увидеть наш запрос в
+          network</p>
+        <button class="addBtn" id="ok">Понятно</button>
+          <h4>Наши соцсети:</h4>
+          <div class="networks">
+            <img src="./images/Facebook.png" alt="Facebook" width="50px">
+            <img src="./images/Telegram.png" alt="Telegram" width="50px">
+            <img src="./images/Instagram.png" alt="Instagram" width="50px">
+          </div>
+
+      </div>
+  
+    </div>
+    <div class="meow">
+      <img src="./images/logo.png" alt="logo" width="30px">
+      <h2 class="les">Наш каталог</h2>
+    </div>
+
+    <div id="filters">
+      <button id="sortAll" class="sort">Все</button>
+      <button id="sortElectronics" class="sort">Электроника</button>
+      <button id="sortWomensclothing" class="sort">Для женщин</button>
+      <button id="sortMensclothing" class="sort">Для мужчин</button>
+      <button id="sortJewelery" class="sort">Ювелирные изделия</button>
+    </div>
+    <ul id="categoriesList">
+
+    </ul>
+    <div id="productList">
+    </div>
+
+    <div id="pagination"></div>
+  </div>
+  
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
