@@ -284,6 +284,7 @@ function deleteFunction() {
   })
     .then(res => res.json())
     .then(json => console.log(json))
+    alert("Удаление прошло успешно")   
 }
 
 const addBtn = document.querySelector('#addBtn')
